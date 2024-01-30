@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opis</title>
+</head>
+<body>
+    <p>
+        Ovaj Flask kod predstavlja web aplikaciju koja koristi SQLite bazu podataka za skladištenje poruka. Aplikacija ima tri ključne rute:
+    </p>
+    <p>
+        Početna stranica ("/"):
+        Prikazuje osnovnu stranicu aplikacije.<br>
+
+        Stranica sa opisom ("/opis"):
+        Prikazuje stranicu sa dodatnim informacijama ili opisom, često korišćenu za opis autora ili svrhe aplikacije.<br>
+
+        Stranica sa porukama ("/blog"):
+        Prikazuje sve poruke koje su korisnici dodali putem forme na stranici. Poruke se čuvaju u SQLite bazi podataka.<br>
+    </p>
+    <p>
+        Aplikacija omogućuje korisnicima da dodaju nove poruke putem forme na stranici "/blog" i isto tako da brišu postojeće poruke. Dodavanje poruke se vrši preko HTTP POST zahteva, dok se brisanje vrši preko HTTP GET zahteva sa odgovarajućim identifikatorom poruke.
+
+        SQLite baza podataka se koristi za trajno čuvanje podataka, a SQLAlchemy omogućuje lak pristup i manipulaciju bazom podataka u Flask okviru.
+
+        Aplikaci ja se pokreće lokalno ako se izvrši kao samostalni program (if __name__ == "__main__": app.run()).
+    </p>
+</body>
+</html>
